@@ -1,0 +1,18 @@
+class Main {
+    public static void main(String[] args) {
+       int[] nums = {10, 20, 4, 45, 99, 99};
+       int firstLargestElement = nums[0];
+     int secondLargestElement = -1;
+     for(int i = 0 ; i < nums.length; i++) {
+        if(nums[i] > firstLargestElement) {
+            firstLargestElement = nums[i];
+        }
+     }
+     for(int i = 0 ; i < nums.length; i++) {
+        if(nums[i] != firstLargestElement && nums[i]>secondLargestElement) {
+            secondLargestElement = nums[i];
+        }
+     }
+     System.out.println("line 19 "+secondLargestElement);
+    }
+}
